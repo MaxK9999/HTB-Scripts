@@ -24,6 +24,7 @@ with open(wordlist, "r", encoding="latin-1") as wl:
         try:
             if try_password(password):
                 print(f"{GREEN}[+] Password found: {password}{RESET}")
+                print("[✓] Decryption finished, check out output file.")
                 break
         except KeyboardInterrupt:
             print("\n[!] Interrupted.")
